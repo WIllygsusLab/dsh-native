@@ -1,8 +1,21 @@
 # Quick start — from a fresh clone to a paired phone
 
-This is the end-to-end path. You need: a **DeepSeek Harness** install (the `dsh` CLI), an Android
-phone on the same network, and an Android SDK + JDK 17 (or let `tools/setup-toolchain.sh` fetch them
-on macOS/Linux).
+This is the end-to-end path.
+
+> **Read this first — the three things that trip people up**
+>
+> 1. **You must bring your own DSH host.** This repo is the Android client + host plugin; it does not
+>    install DeepSeek Harness, provide a model provider, or include credentials.
+> 2. **Your LAN IP must be trusted.** The gateway preserves the `Host` header, so the host only accepts
+>    requests from authorities listed in `connection.trustedHosts` (step 2). Otherwise: `403`.
+> 3. **The pairing token rotates on every host restart.** Copy the token from the `dsh web` URL each
+>    time you restart; the cookie you get lasts 30 days. A `401` means: re-pair with a fresh token.
+>
+> Also: Android only (no iOS/desktop client), and the plugin snapshot (`0.1.0`) may trail a newer
+> host API (`0.7.2` on the development host) — re-sync `plugin/` if DSH's plugin API changes.
+
+You need: a **DeepSeek Harness** install (the `dsh` CLI), an Android phone on the same network, and an
+Android SDK + JDK 17 (or let `tools/setup-toolchain.sh` fetch them on macOS/Linux).
 
 ## 1. Start your DSH host and copy the launch token
 
@@ -85,6 +98,8 @@ The app exchanges the token for a cookie (stored in the Android Keystore) and re
 | Sheet shows no presets | plugin not mounted | `./tools/install-plugin.sh web`, restart the host, check `/api/mobile/ping` |
 | Build fails: `missing tool` | SDK layout differs | set `JAVA_HOME` + `ANDROID_SDK_ROOT` to a real SDK |
 | Emulator can't reach the host | loopback alias | use `10.0.2.2` as the host IP, or trust it (Android emulator's alias) |
+| Chat works but presets look wrong / missing | plugin snapshot older than host API | re-sync `plugin/` from the host's working plugin version, reinstall, restart the host |
+| App connects then dies on old Android | minSdk 26 | Android 8.0+ required |
 
 ## Notes
 

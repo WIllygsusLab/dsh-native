@@ -13,6 +13,26 @@ AndroidX, no Compose, and zero dependencies**. The whole app is plain Java + pla
 *Screenshots come from a development device; personal content (session titles, paths,
 workspace names) is redacted.*
 
+## Before you start — requirements and caveats
+
+**This repo is the client + host plugin, not the harness itself.** To use it you need:
+
+1. **Your own DeepSeek Harness install** (`dsh` CLI) running a host — the app pairs to it and reads
+   its model roster. Nothing here provides DSH, a model provider, or credentials.
+2. **A LAN trust entry** — the phone reaches the host through the gateway, which preserves the
+   `Host` header, so your machine's LAN IP must be listed in the profile's
+   `connection.trustedHosts`. Skip this and every request returns `403`.
+3. **A fresh launch token** — pairing needs the token from the `dsh web` start URL. It **rotates on
+   every host restart**; the paired cookie lasts 30 days. A `401 unauthenticated` means copy the new
+   token and re-pair.
+4. **An Android phone** — Android only; there is no iOS or desktop client here.
+
+Also note: the plugin in `plugin/` is a snapshot (`0.1.0`); this repo's dev host runs a newer API
+(`0.7.2`). The surface matches today, but if DSH changes the plugin API, re-sync `plugin/` from your
+host's working version.
+
+**Full step-by-step:** [QUICKSTART.md](QUICKSTART.md)
+
 ## Features
 
 - **Discord-mobile-shaped navigation** — a workspace rail (workspaces ≈ servers, sessions ≈ channels)
