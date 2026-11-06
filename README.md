@@ -28,6 +28,8 @@ workspace names) is redacted.*
 - **Plugins / Jobs / Decisions / Agents** surfaces, plugin switches, job kill/copy dialogs.
 - **Pairing by QR/URL**, session cookie auth, LAN gateway friendly.
 
+**New here? → [QUICKSTART.md](QUICKSTART.md)** walks from a fresh clone to a paired phone.
+
 ## Build
 
 Prerequisites: JDK 17+, Android SDK build-tools (`aapt2`, `d8`, `apksigner`) and `platforms;android-34`.
