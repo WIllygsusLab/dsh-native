@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Harness Native design tokens — ui-spec.md §4. Dark-only in M1. -->
+<resources>
+    <!-- canvas -->
+    <color name="bg">#0A0D13</color>
+    <color name="bg_rail">#0E131C</color>
+    <color name="bg_elevated">#0E131C</color>
+    <!-- surfaces -->
+    <color name="surface">#111722</color>
+    <color name="surface_2">#161E2C</color>
+    <color name="surface_3">#1C2637</color>
+    <color name="code_bg">#0E131C</color>
+    <!-- strokes -->
+    <color name="stroke">#233046</color>
+    <color name="stroke_soft">#1A2333</color>
+    <!-- text -->
+    <color name="text">#E8EEF9</color>
+    <color name="text_soft">#C3CFE2</color>
+    <color name="muted">#8FA0B8</color>
+    <color name="faint">#5C6B82</color>
+    <!-- accents -->
+    <color name="accent">#5B8CFF</color>
+    <color name="accent_soft">#2A3E6B</color>
+    <color name="accent_2">#38D6C4</color>
+    <color name="on_accent">#0A0D13</color>
+    <!-- semantic -->
+    <color name="green">#3DDC97</color>
+    <color name="amber">#FFC857</color>
+    <color name="red">#FF6B6B</color>
+    <color name="purple">#B58CFF</color>
+    <color name="pink">#FF8FB1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- overlays -->
+    <color name="scrim">#B3000000</color>
+    <color name="bubble_user">#2A3E6B</color>
+    <color name="bubble_agent">#161E2C</color>
+</resources>

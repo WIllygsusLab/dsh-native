@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Active bottom-tab treatment (ui-overhaul-spec §5): 3dp×24dp accent bar at the tab's top
+     edge, mirroring the rail's rail_selected_indicator pill. Never color-only (a11y). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:gravity="top|center_horizontal" android:width="24dp" android:height="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/accent" />
+        </shape>
+    </item>
+</layer-list>

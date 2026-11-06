@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Harness Native dimensions — 4dp grid (ui-spec.md §4). -->
+<resources>
+    <!-- shell -->
+    <dimen name="rail_drawer_width">300dp</dimen>
+    <dimen name="rail_item_height">56dp</dimen>
+    <dimen name="rail_icon">48dp</dimen>
+    <dimen name="rail_tile">24dp</dimen>
+    <dimen name="rail_width">88dp</dimen>
+    <dimen name="topbar_height">56dp</dimen>
+    <dimen name="bottomnav_height">56dp</dimen>
+    <dimen name="tab_icon">24dp</dimen>
+    <dimen name="tab_badge_min">16dp</dimen>
+    <!-- spacing -->
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <!-- rows -->
+    <dimen name="channel_row_height">44dp</dimen>
+    <dimen name="session_row_height">64dp</dimen>
+    <dimen name="agent_row_height">60dp</dimen>
+    <dimen name="plugin_row_height">88dp</dimen>
+    <dimen name="job_row_height">72dp</dimen>
+    <dimen name="decision_row_min">96dp</dimen>
+    <dimen name="section_header_height">32dp</dimen>
+    <dimen name="touch_min">48dp</dimen>
+    <dimen name="icon_s">20dp</dimen>
+    <dimen name="icon_m">24dp</dimen>
+    <!-- avatars -->
+    <dimen name="avatar_xs">24dp</dimen>
+    <dimen name="avatar_s">32dp</dimen>
+    <dimen name="avatar_m">40dp</dimen>
+    <dimen name="avatar_l">48dp</dimen>
+    <dimen name="avatar_xl">64dp</dimen>
+    <!-- composer -->
+    <dimen name="composer_min">52dp</dimen>
+    <dimen name="send_button">44dp</dimen>
+    <!-- radii -->
+    <dimen name="radius_chip">4dp</dimen>
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_card">12dp</dimen>
+    <dimen name="radius_bubble">14dp</dimen>
+    <dimen name="radius_sheet">16dp</dimen>
+    <dimen name="radius_large">20dp</dimen>
+    <dimen name="radius_pill">999dp</dimen>
+</resources>

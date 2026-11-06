@@ -1,0 +1,10 @@
+# build output and local signing material — never publish keys
+build/
+build-native/
+signing/
+dist/
+signing/
+build/
+build-native/
+*.bak-*
+.DS_Store

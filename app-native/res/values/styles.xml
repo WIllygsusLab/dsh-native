@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DshNative" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorControlActivated">@color/accent</item>
+        <item name="android:colorControlNormal">@color/muted</item>
+        <item name="android:colorControlHighlight">#335B8CFF</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="Text.Display" parent="">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.Title1" parent="">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.Title2" parent="">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Title3" parent="">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.RowTitle" parent="">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Body" parent="">
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="Text.BodySmall" parent="">
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Caption" parent="">
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Label" parent="">
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Text.Micro" parent="">
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Mono" parent="">
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="Button.Primary" parent="">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/on_accent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Button.Ghost" parent="">
+        <item name="android:background">@drawable/bg_button_ghost</item>
+        <item name="android:textColor">@color/text_soft</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

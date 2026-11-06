@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Harness Native</string>
+    <string name="app_version">0.1.0 · M1-03</string>
+
+    <!-- tabs -->
+    <string name="tab_chats">Chats</string>
+    <string name="tab_agents">Agents</string>
+    <string name="tab_plugins">Plugins</string>
+    <string name="tab_jobs">Jobs</string>
+    <string name="tab_you">You</string>
+
+    <!-- connect -->
+    <string name="connect_title">Harness Native</string>
+    <string name="connect_subtitle">Connect to your DSH host to see sessions, agents, and plugins.</string>
+    <string name="connect_scan">Scan QR code</string>
+    <string name="connect_or">or paste a pairing link</string>
+    <string name="connect_url_hint">http://192.168.1.10:3091</string>
+    <string name="connect_button">Connect</string>
+    <string name="connect_token_label">PAIRING TOKEN</string>
+    <string name="connect_token_hint">Optional if this device is already paired</string>
+    <string name="connect_failed">Pairing failed. Paste the full dsh web URL with ?token=…, or check the gateway.</string>
+    <string name="search_hint">Filter sessions</string>
+    <string name="no_results">No matching sessions</string>
+    <string name="refresh">Refresh</string>
+    <string name="unpair">Unpair host</string>
+    <string name="connect_last">Use last host</string>
+    <string name="connect_working">Connecting…</string>
+    <string name="connect_scan_m2">Camera pairing arrives with the data layer (M1-04). Paste the link for now.</string>
+    <string name="connect_footer">The pairing token is one-shot. Find it in dsh web → pairing.</string>
+    <string name="connect_error_title">Can’t reach the host</string>
+    <string name="connect_error_body">Check the gateway is running and the URL is reachable from this phone.</string>
+    <string name="connect_invalid_url">Enter a full URL, e.g. http://192.168.1.10:3091</string>
+    <string name="retry">Retry</string>
+
+    <!-- shell -->
+    <string name="chats_subtitle_fmt">%1$s · %2$s</string>
+    <string name="channels">CHANNELS</string>
+    <string name="sessions">SESSIONS</string>
+    <string name="direct_messages">DIRECT MESSAGES</string>
+    <string name="workspaces">WORKSPACES</string>
+    <string name="rail_home_label">Home</string>
+    <string name="rail_home_desc">home all spaces</string>
+    <string name="rail_tools_label">Tools</string>
+    <string name="rail_tools_desc">tools drawer</string>
+    <string name="tools_drawer_title">Tools</string>
+    <string name="tools_row_agents">Agents</string>
+    <string name="tools_row_plugins">Plugins</string>
+    <string name="tools_row_jobs">Jobs</string>
+    <string name="tools_row_decisions">Decisions</string>
+    <string name="tools_row_agents_sub">Agent roster</string>
+    <string name="tools_row_plugins_sub">Plugin cards and toggles</string>
+    <string name="tools_row_jobs_sub">Background jobs</string>
+    <string name="tools_row_decisions_sub">Approvals inbox</string>
+    <string name="tools_row_decisions_waiting_fmt">Approvals inbox · Waiting: %1$d</string>
+    <string name="rail_open">Spaces</string>
+    <string name="rail_toggle_show_desc">show sidebar</string>
+    <string name="rail_toggle_hide_desc">hide sidebar</string>
+    <string name="search">Search</string>
+    <string name="more">More</string>
+    <string name="back">Back</string>
+    <string name="members">Members</string>
+    <string name="read_only">Read-only in M1</string>
+
+    <!-- chats -->
+    <string name="no_sessions_title">No sessions yet</string>
+    <string name="no_sessions_body">Sessions appear here when the host starts one.</string>
+    <string name="no_dms_title">No direct messages yet</string>
+    <string name="no_dms_body">Teammate conversations appear here once the roster is live.</string>
+    <string name="session_untitled">Untitled session</string>
+    <string name="special_decisions">decisions</string>
+    <string name="special_jobs">jobs</string>
+    <string name="special_agents">agents</string>
+    <string name="special_plugins">plugins</string>
+    <string name="group_running">RUNNING</string>
+    <string name="group_recent">RECENT</string>
+    <string name="group_waiting">WAITING</string>
+    <string name="group_team">TEAM</string>
+    <string name="group_test">TEST</string>
+    <string name="group_test_fmt">TEST · %1$d</string>
+    <string name="test_toggle_hidden">hidden</string>
+    <string name="test_toggle_shown">shown</string>
+    <string name="group_waiting_sub">blocked on you right now</string>
+    <string name="group_team_sub">your agents, teammates and Discord threads</string>
+    <string name="group_running_sub">working now</string>
+    <string name="group_recent_sub">everything else, newest first</string>
+    <string name="section_channels_caption">Shortcuts to the surfaces below — the tabs open the same places</string>
+    <string name="new_session">New session</string>
+    <string name="session_created">New session started</string>
+    <string name="session_create_failed">Can\'t create a session — %1$s</string>
+    <string name="session_name_hint">Name (optional)</string>
+    <string name="session_visibility_hint">Appears in DSH after your first message.</string>
+    <string name="session_create_label">Create</string>
+    <string name="session_creating">Creating…</string>
+    <string name="session_create_preset_not_found">That preset isn\'t available on this host — choose another preset.</string>
+    <string name="session_create_preset_unavailable">This preset can\'t start right now — %1$s</string>
+    <string name="session_create_rejected">That selection was rejected — %1$s</string>
+    <string name="session_rename_failed">Rename failed — %1$s</string>
+    <string name="preset_section_label">PRESET</string>
+    <string name="preset_broken_host">This preset couldn\'t load on the host</string>
+    <string name="preset_details_label">Details</string>
+    <string name="preset_details_desc_fmt">details for %1$s</string>
+    <string name="preset_details_close">Close</string>
+    <string name="preset_model_fmt">model %1$s</string>
+    <string name="preset_runs_default_model">Runs the host default model</string>
+    <string name="workspace_section_label">WORKSPACE</string>
+    <string name="workspace_create_in_fmt">Create in %1$s</string>
+    <string name="workspace_create_in_path_fmt">Create in %1$s · %2$s</string>
+    <string name="mark_read">Mark read</string>
+    <string name="mark_unread">Mark unread</string>
+    <string name="copy_session_id">Copy session id</string>
+    <string name="copy">Copy</string>
+
+    <!-- chat -->
+    <string name="chat_empty_title">No messages yet</string>
+    <string name="chat_empty_body">Say something to start the conversation.</string>
+    <string name="composer_hint">Read-only preview — sending arrives in M2</string>
+    <string name="composer_placeholder">Message</string>
+    <string name="send">Send message</string>
+    <string name="attach">Attach</string>
+
+    <!-- agents -->
+    <string name="agents_empty_title">No agents online</string>
+    <string name="agents_empty_body">The roster appears when the host reports agents.</string>
+    <string name="status_running">running</string>
+    <string name="status_inactive">inactive</string>
+    <string name="status_provisioning">provisioning</string>
+    <string name="status_failed">failed</string>
+    <string name="status_online">online</string>
+    <string name="status_offline">offline</string>
+
+    <!-- plugins -->
+    <string name="plugins_summary_fmt">%1$d extensions · %2$d entries · read-only</string>
+    <string name="plugins_empty_title">No plugins reported</string>
+    <string name="plugins_empty_body">The plugin deck appears when the host reports its inventory.</string>
+    <string name="enabled">enabled</string>
+    <string name="disabled">disabled</string>
+    <string name="read_only_reason">Read-only: %1$s</string>
+
+    <!-- jobs -->
+    <string name="jobs_empty_title">No jobs running</string>
+    <string name="jobs_empty_body">Jobs appear here when autopilot, terminals, or agents run work.</string>
+    <string name="job_running">running</string>
+    <string name="job_stopping">stopping</string>
+    <string name="job_completed">completed</string>
+    <string name="job_killed">killed</string>
+    <string name="job_failed">failed</string>
+
+    <!-- decisions -->
+    <string name="decisions_title">#decisions</string>
+    <string name="decisions_readonly">Read-only in M1 · Answering arrives in M2</string>
+    <string name="decisions_empty_title">Nothing waiting on you</string>
+    <string name="decisions_empty_body">Approvals and questions appear here when a session needs a human.</string>
+    <string name="decision_open_session">Open session</string>
+    <string name="decision_pending">pending</string>
+    <string name="decision_settled">settled</string>
+    <string name="decision_urgent">urgent</string>
+
+    <!-- you -->
+    <string name="you_title">You</string>
+    <string name="you_operator">Operator</string>
+    <string name="host">HOST</string>
+    <string name="connection">CONNECTION</string>
+    <string name="about">ABOUT</string>
+    <string name="connected">connected</string>
+    <string name="disconnected">disconnected</string>
+    <string name="copy_host_url">Copy host URL</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="re_pair">Re-pair host</string>
+    <string name="unpair_confirm">Unpair and return to Connect?</string>
+    <string name="version_row">Version</string>
+    <string name="build_row">Build</string>
+    <string name="webview_row">Rendering</string>
+    <string name="webview_value">Native Views · no WebView</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="toast_read_only">Read-only preview — actions arrive in M2</string>
+    <string name="toast_placeholder">Arrives with the data layer (M1-04)</string>
+    <string name="error_401_title">Session expired</string>
+    <string name="error_401_body">This phone is no longer paired. Pair it again with the host.</string>
+    <string name="error_403_title">Host rejected this phone</string>
+    <string name="error_403_body">Add this phone\'s authority to connection.trustedHosts, or use the mobile gateway.</string>
+    <string name="error_offline_title">Can\'t reach the host</string>
+    <string name="error_offline_body">Check the gateway is running and the phone is on the same network.</string>
+    <string name="loading_older">Loading older messages...</string>
+    <string name="chat_beginning">Beginning of conversation</string>
+    <string name="jump_to_latest">Jump to latest</string>
+    <string name="jump_to_latest_fmt">Jump to latest · %1$d new</string>
+    <string name="decision_answer_m2_1">Answering arrives in M2.1</string>
+    <string name="decision_workspace_unknown">workspace unknown</string>
+    <string name="decision_source_problem">Decisions source unavailable</string>
+    <string name="decision_source_problem_hint">Switch on the Decisions plugin / Session Watch to see pending cards.</string>
+    <string name="decision_no_actions">No actions available</string>
+    <string name="decision_answered_elsewhere">Answered in another view</string>
+    <string name="decision_late_answer">Late answer - the agent may have continued</string>
+    <string name="decision_delivery_next_turn">Will arrive in the session as a new message</string>
+    <string name="decision_continued">Agent continued - still answerable</string>
+    <string name="decision_stale">This request changed (stale) - no action</string>
+    <string name="decision_withdrawn">Withdrawn by the host - no action</string>
+    <string name="decision_expired">Expired - no action</string>
+    <string name="decision_open_in_inbox">Open in #decisions</string>
+    <string name="approval_allow_once">Allow once</string>
+    <string name="approval_reject_label">Reject</string>
+    <string name="approval_sheet_title">Allow this tool once?</string>
+    <string name="approval_sheet_body">This lets the agent run this tool once.</string>
+    <string name="approval_workspace_ack_label">I understand the workspace is unknown</string>
+    <string name="approval_tool_label">Tool</string>
+    <string name="approval_args_label">Arguments</string>
+    <string name="approval_workspace_label">Workspace</string>
+    <string name="approval_session_label">Session</string>
+    <string name="question_submit_label">Submit</string>
+    <string name="question_skip_label">Skip</string>
+    <string name="question_waiting_note">The agent is waiting</string>
+    <string name="question_empty_options">Question has no options - cannot answer</string>
+    <string name="question_late_label">Late answer - the agent may have continued</string>
+    <string name="decision_go_recommended">Go with the recommendation</string>
+    <string name="decision_answer_hint">Type an answer</string>
+    <string name="decision_delivered_fmt">Delivered to %1$s</string>
+    <string name="decision_dismiss_label">Dismiss</string>
+    <string name="decision_retry_label">Retry</string>
+    <string name="decision_stale_copy">This request changed - no action</string>
+    <string name="approval_cancel_label">Cancel</string>
+    <string name="approval_undo_label">Undo</string>
+    <string name="approval_rejecting">Rejecting in 3s - Undo</string>
+    <string name="question_custom_hint">Add a note (optional)</string>
+    <string name="question_delivery_inline">Submitting settles the tool result</string>
+    <string name="question_delivery_next_turn">Will arrive in the session as a new message</string>
+    <string name="decisions_subtitle_live">Pending interactions · answer in place</string>
+    <string name="plugin_restart_required">RESTART REQUIRED · restart the host to apply the plugin change</string>
+    <string name="dependency_warning_title">Dependency warning</string>
+    <string name="dependency_warning_body">Decisions depends on Session Watch. Disabling Session Watch may hide pending decisions cards until both are enabled again.</string>
+    <string name="dependency_disable_confirm">Disable anyway</string>
+    <string name="dependency_cancel_label">Cancel</string>
+    <string name="job_cancelled_by_user">Stop requested - cancelled by the user</string>
+</resources>
